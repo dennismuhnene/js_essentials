@@ -51,3 +51,25 @@ let authenticationStatus = isAutheticated ? "Authenticated" : "Not authenticated
 
 console.log("Authentication Status:", authenticationStatus);
 
+// Assignment
+
+function authorizeAccess(role) {
+    if (role === 'Employee') {
+      console.log("You are an Employee. You are authorized to have access to 'Dietary Services'.");
+    } else if (role === 'Enrolled Member') {
+      console.log("You are an Enrolled Member. You are authorized to have access to 'Dietary Services' and one-on-one interaction with a dietician.");
+    } else if (role === 'Subscriber') {
+      console.log("You are a Subscriber. You are authorized to have partial access to facilitate 'Dietary Services' only.");
+    } else if (role === 'Non-Subscriber') {
+      console.log("You are a Non-Subscriber. You need to enroll or at least subscribe first to avail this facility.");
+    } else {
+      console.log("Invalid role. Please provide a valid role.");
+    }
+  }
+  
+  // Test the function with different roles
+  authorizeAccess('Employee');
+  //authorizeAccess('Enrolled Member');
+  //authorizeAccess('Subscriber');
+  //authorizeAccess('Non-Subscriber');
+  //authorizeAccess('Invalid Role');
