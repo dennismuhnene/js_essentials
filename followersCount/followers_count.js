@@ -30,6 +30,6 @@ function increaseCount() {
 
 function resetCount() {
     count = count - count; // resets the count to 0
-    displayCount(); //  Dispplays the Count
+    displayCount(); //  Displays the Count
     alert ("Your instagram follower count has been reset");
 }
