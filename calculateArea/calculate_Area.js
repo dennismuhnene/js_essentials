@@ -19,5 +19,5 @@ function calculategroceries() {
     grocery3 = parseFloat(document.getElementById('grocery3').value);
 
 let amount = grocery1 + grocery2 + grocery3
-document.getElementById('result').innerText = `The area total amount is: ${amount}`;
+document.getElementById('groc_result').innerText = `The area total amount is: ${amount}`;
 }
